@@ -124,7 +124,7 @@ if temp is not None and hum is not None and n is not None and p is not None and 
         nombre, temp_range, hum_range, n_range, p_range, k_range = cultivo
         resultado = verificar_cultivo(nombre, temp, hum, n, p, k, temp_range, hum_range, n_range, p_range, k_range)
         with col1:
-            st.markdown(f"{resultado}", unsafe_allow_html=True)
+            st.markdown(resultado, unsafe_allow_html=True)
     with col2:
         for cultivo in cultivos:
             nombre, temp_range, hum_range, n_range, p_range, k_range = cultivo
