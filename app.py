@@ -83,11 +83,16 @@ st.sidebar.write(f'🕐 {formatted_date_time}')
 
 # Función para verificar los parámetros de los cultivos
 def verificar_cultivo(nombre, temp, hum, n, p, k, temp_range, hum_range, n_range, p_range, k_range):
-    resultado = f"**{nombre}** T: {'✔️' if temp_range[0] <= temp <= temp_range[1] else '<span style="color:red;">❌</span>'}\n"
-    resultado += f"H: {'✔️' if hum_range[0] <= hum <= hum_range[1] else '<span style="color:red;">❌</span>'}\n"
-    resultado += f"N: {'✔️' if n_range[0] <= n <= n_range[1] else '<span style="color:red;">❌</span>'}\n"
-    resultado += f"P: {'✔️' if p_range[0] <= p <= p_range[1] else '<span style="color:red;">❌</span>'}\n"
-    resultado += f"K: {'✔️' if k_range[0] <= k <= k_range[1] else '<span style="color:red;">❌</span>'}\n"
+    resultado = f"**{nombre}** T: {'✔️' if temp_range[0] <= temp <= temp_range[1] else '👎'}\n"
+    resultado += f"H: {'✔️' if hum_range[0] <= hum <= hum_range[1] else '👎'}\n"
+    resultado += f"N: {'✔️' if n_range[0] <= n <= n_range[1] else '👎'}\n"
+    resultado += f"P: {'✔️' if p_range[0] <= p <= p_range[1] else '👎'}\n"
+    resultado += f"K: {'✔️' if k_range[0] <= k <= k_range[1] else '👎'}\n"
+    # resultado = f"**{nombre}** T: {'✔️' if temp_range[0] <= temp <= temp_range[1] else '<span style="color:red;">❌</span>'}\n"
+    # resultado += f"H: {'✔️' if hum_range[0] <= hum <= hum_range[1] else '<span style="color:red;">❌</span>'}\n"
+    # resultado += f"N: {'✔️' if n_range[0] <= n <= n_range[1] else '<span style="color:red;">❌</span>'}\n"
+    # resultado += f"P: {'✔️' if p_range[0] <= p <= p_range[1] else '<span style="color:red;">❌</span>'}\n"
+    # resultado += f"K: {'✔️' if k_range[0] <= k <= k_range[1] else '<span style="color:red;">❌</span>'}\n"
     return resultado
 
 def sugerir_cultivo(temp, hum, n, p, k, temp_range, hum_range, n_range, p_range, k_range):
