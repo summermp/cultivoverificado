@@ -188,7 +188,7 @@ for mensaje in st.session_state.conversation:
 
 # Formulario para el chat
 with st.sidebar.form(key="chat_form", clear_on_submit=True):
-    usuario_input = st.text_input("",placeholder="Escribe tu consulta", label_visibility='hidden')
+    usuario_input = st.text_input("Consulta",placeholder="Escribe tu consulta", label_visibility='hidden')
     submit_button = st.form_submit_button(label="Enviar")
 
     if submit_button and usuario_input:
