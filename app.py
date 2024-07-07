@@ -143,8 +143,7 @@ def verificar_cultivo(temp, hum, n, p, k, temp_range, hum_range, n_range, p_rang
 def obtener_rango_cultivo(cultivo_nombre):
     for cultivo in cultivos:
         if cultivo["nombre"].lower() == cultivo_nombre.lower():
-            return f"**{cultivo['nombre']}**\n" \
-                   f"Temperatura: {cultivo['temp_range'][0]} - {cultivo['temp_range'][1]} °C\n" \
+            return f"Temperatura: {cultivo['temp_range'][0]} - {cultivo['temp_range'][1]} °C\n" \
                    f"Humedad: {cultivo['hum_range'][0]} - {cultivo['hum_range'][1]} %\n" \
                    f"Nitrógeno: {cultivo['n_range'][0]} - {cultivo['n_range'][1]} kg/ha\n" \
                    f"Fósforo: {cultivo['p_range'][0]} - {cultivo['p_range'][1]} kg/ha\n" \
