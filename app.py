@@ -168,7 +168,7 @@ def responder_mensaje(mensaje):
                 return f"Valores actuales para **{cultivo['nombre']}** dentro de rangos ideales."
 
             else:
-                return f"""Valores actuales para **{cultivo["nombre"]}** están fuera de los rangos ideales. Valores requeridos\n{obtener_rango_cultivo(cultivo["nombre"])}"""
+                return f"""Valores actuales para **{cultivo["nombre"]}** están fuera de los rangos ideales. **Valores requeridos:** {obtener_rango_cultivo(cultivo["nombre"])}"""
     return "Lo siento, no tengo información para este cultivo. Por favor, indique el nombre del cultivo que desea consultar..."
 
 # Espacio para la conversación
